@@ -1,0 +1,23 @@
+Steps for Project Environment
+
+1) Create a Folder and Virtual Environment
+
+mkdir crypto-trading-chart
+cd crypto-trading-chart
+python -m venv venv
+
+2) Activate Environment on Window
+
+venv\Scripts\activate
+
+3) Install Required Libraries
+
+pip install dash pandas requests ta plotly
+
+4) Create File Structure
+
+crypto-trading-chart
+app.py               ← Main Dash app
+data_fetcher.py      ← Fetches OHLCV data from Binance
+indicators.py        ← Calculates indicators (RSI, MA, etc.)
+chart.py             ← Builds candlestick chart with indicators
